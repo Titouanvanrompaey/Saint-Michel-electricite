@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    color: #0400ff;
+    text-align: left;
+    padding: 1em;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #2f00ff;
+    text-decoration: none;
+    margin: 0 1em;
+}
