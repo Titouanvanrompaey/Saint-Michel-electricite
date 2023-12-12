@@ -22,3 +22,11 @@ nav a {
     text-decoration: none;
     margin: 0 1em;
 }
+footer {
+    width: 100%;
+    background-color: #111;
+    color: #0400ff;
+    text-align: left;
+    padding: 1em;
+    margin: 0;
+}
