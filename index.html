@@ -2,108 +2,104 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>Saint-Michel &eacute;lectricit&eacute;</title>
-        <link href="index.css" rel="stylesheet">
-        <link rel="icon" href="C:\Users\PC\OneDrive\Documents\stage\logo\Saint-Michel.png" type="image/x-icon">
-      <link rel="shortcut icon" href="C:\Users\PC\OneDrive\Documents\stage\logo\Saint-Michel.png" type="image/x-icon">
-        <style>
-          .center-content {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
-              min-height: 100vh;
-          }
-      </style>
+        <title>Saint-Michel électricité</title>
+        <link href="css/index.css" rel="stylesheet">
     </head>
     <body>
-    <div class="container">
         <header>
-          <h1>Saint-Michel &eacute;lectricit&eacute;</h1>
+         <h1>Saint-Michel &eacute;lectricit&eacute;</h1>
         </header>
-        <nav>
-          <a href="#realisations">Mon Parcours</a>
-          <a href="#travaux">Mes travaux</a>
-          <a href="#contact">Contactez Moi</a>
-      </nav>
-        <div class="center-content">
-        <section id="about">
-          <h2 class="title-spacer mb-5">Mon Parcours</h2>
-          <div class="row my-container">
-            <div class="col-lg-6 my-3">
-                    <img src="" alt="Saint-Michel &eacute;lectriciter" class="img-fluid">
-            </div>
-            <div class="col-lg-6 about-text my-3">
-              <p> expication a ajouter...
-        </p>
-            </div>
-          </div>
-        </section>
-        <section>
-          <h2 class="title-spacer mb-5"> Mes travaux</h2>
-          <p> photo et explication a ajouter...
-          </p>
-        </section>
-        <section id="contact">
-          <h2 class="title-spacer mb-5">Contactez Moi </h2>
-          <div class="my-container">
-              <div class="phone my-5">
-                <h4> T&eacute;l&eacute;phones :&nbsp;</h4>
-                <div>
-                  <a> numero personnel:</a> <a href="tel:0600000000"> 0600000000</a>
-                  <div style="margin: 20px;"></div>
-                  <a> numero de l'entreprsie:</a> <a href="tel:0100000000"> 0100000000</a>
-                </div>
+        <header>
+            <nav class="navbar" id="main-navbar">                  
+                <div id="accueil"><a class="nav-link active" href="#home">Accueil</a></li></div>
+                <a class="nav-link active" href="#realisations">Mon Parcours</a></li>
+                <a class="nav-link active" href="#travaux">Mes travaux</a></li>
+                <a class="nav-link active" href="#contact">Contactez moi</a></li>             
+            </nav>	
+        </header>
+        <div class="banner-slider" id="home">
+          <section>
+            Photos d'illustration
+          </section>
+        </div>
+        <div class="banner-slider" id="realisations">
+          <section>
+            <h2 class="title-spacer mb-5">Mon Parcours</h2>
+            <div class="row my-container">
+              <div class="col-lg-6 my-3">
+                      <img src="" alt="Saint-Michel &eacute;lectricité" class="img-fluid">
               </div>
-              <div style="margin: 100px;"></div>
-              <h3 class="title-spacer mb-5">formulaire de contact </h3>
-              <form id="contactForm" onsubmit="return validateForm()">
-                <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom" required>
-        
-                <label for="email">Adresse e-mail :</label>
-                <input type="email" id="email" name="email" required>
-        
-                <label for="objet">Objet :</label>
-                <input type="text" id="objet" name="objet" required>
-        
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-        
-                <button type="submit">Envoyer</button>
-            </form>
-        
-            <div id="errorMessage" class="error-message" style="display:none;"></div>
-        
-            <script>
-                function validateForm() {
-                    var nom = document.getElementById("nom").value;
-                    var email = document.getElementById("email").value;
-                    var objet = document.getElementById("objet").value;
-                    var message = document.getElementById("message").value;
-        
-                    if (nom === "" || email === "" || objet === "" || message === "") {
-                        document.getElementById("errorMessage").innerText = "Veuillez remplir tous les champs du formulaire.";
-                        document.getElementById("errorMessage").style.display = "block";
-                        return false;
-                    }
-        
-                    return true;
-                }
-            </script>
-       
-        </section>
-                </main>
-                      </div>
+                <p> explications a ajouter...</p>
             </div>
+          </section>
+        <div class="banner-slider" id="travaux">
+          <section>
+            <h2 class="title-spacer mb-5"><span class="underline"></span>Mes travaux</span></h2>
+            <p> photo et explication a ajouter...</p>
+          </section>
+        </div>
+        <div class="banner-slider" id="contact">
+          <section id="contact">
+            <h2 class="title-spacer mb-5">Contactez Moi </h2>
+            <div class="my-container">
+                <div class="phone my-5">
+                  <h4> T&eacute;l&eacute;phones :&nbsp;</h4>
+                  <div>
+                    <a> numero personnel:</a> <a href="tel:0626383558"> 0626383558</a>
+                    <div style="margin: 20px;"></div>
+                    <a> numero de l'entreprsie:</a> <a href="tel:0100000000"> 0100000000</a>
+                  </div>
+                </div>
+                <div style="margin: 100px;"></div>
+                <h3 class="title-spacer mb-5">formulaire de contact </h3>
+                <form id="contactForm" onsubmit="return validateForm()">
+                  <label for="nom">Nom :</label>
+                  <input type="text" id="nom" name="nom" required>
+          
+                  <label for="email">Adresse e-mail :</label>
+                  <input type="email" id="email" name="email" required>
+          
+                  <label for="objet">Objet :</label>
+                  <input type="text" id="objet" name="objet" required>
+          
+                  <label for="message">Message :</label>
+                  <textarea id="message" name="message" rows="4" required></textarea>
+          
+                  <button type="submit">Envoyer</button>
+              </form>
+          
+              <div id="errorMessage" class="error-message" style="display:none;"></div>
+          
+              <script>
+                  function validateForm() {
+                      var nom = document.getElementById("nom").value;
+                      var email = document.getElementById("email").value;
+                      var objet = document.getElementById("objet").value;
+                      var message = document.getElementById("message").value;
+          
+                      if (nom === "" || email === "" || objet === "" || message === "") {
+                          document.getElementById("errorMessage").innerText = "Veuillez remplir tous les champs du formulaire.";
+                          document.getElementById("errorMessage").style.display = "block";
+                          return false;
+                      }
+          
+                      return true;
+                  }
+              </script>
+         
+          </section>
+        </div>
                 <footer class="content-info">
           <div>
-                  <div class="menu-subfooter-container"><ul id="menu-subfooter" class="footer-nav"><li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-61"><a href="">Politique de confidentialité</a></li>
+                  <div class="menu-subfooter-container"><a href="https://menuiserie-valla.fr/politique-de-confidentialite/">Politique de confidentialité</a>
         </ul></div>
               </div>
           <div class="footer">
-            <p>Saint-Michel &eacute;lectriciter – 2023 © Tous droits r&eacute;serv&eacute;s</p>
+            <p>Saint-Michel électricité – 2023 © Tous droits réservés</p>
+            <div class="foot-socials">
+                      <a href="https://www.facebook.com/pages/category/Home-Improvement/Menuiserie-Valla-105693384467047/"><i class="fab fa-facebook-f"></i></a>
+                  </div>
           </div>
-        </footer>
-    </body> 
+        </footer> 
+    </body>
 </html>
