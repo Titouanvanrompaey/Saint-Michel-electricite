@@ -2,10 +2,25 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    justify-content: center;
+    align-items: center;
     background-color: #f0f0f0;
+    height: 100vh;
+    font-family: "Script MT Bold", cursive;
+    
 }
-
-
+h1 {
+    font-size: 50px; 
+}
+h2{
+    font-size: 35px; 
+}
+h3{
+    font-size: 20px; 
+}
+.container {
+    text-align: center; /* Pour centrer le contenu textuel */
+}
 header {
     width: 100%;
     background-color: #333;
@@ -53,12 +68,12 @@ textarea {
 button {
     background-color: #4caf50;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
 }
 button:hover {
-    background-color: #45a049;
+    background-color: #006400;
 }
 .error-message {
     color: red;
