@@ -64,6 +64,15 @@ textarea {
     margin-bottom: 16px;
     box-sizing: border-box;
 }
+.img-fluid {
+    width: 500px; /* Largeur souhaitée */
+    height: 400px; /* Hauteur souhaitée */
+}
+.custom-sized-image {
+    width: 100vw; /* Largeur souhaitée */
+    height: auto; /* Hauteur souhaitée */
+
+}
 button {
     background-color: #4caf50;
     color: white;
