@@ -28,7 +28,28 @@ header {
     padding: 1em;
     margin: 0px;
     font-family: Arial, sans-serif;
+    height: 400px;
+    background: url('https://content.jetpulp.fr/uploads/banniere_ampoule_google_update_b195377e2f.jpg') no-repeat center bottom fixed;
+    background-size: cover;
 }
+.texte-sur-image {
+    position: absolute;
+    top: 50%; /* Positionne le haut du conteneur de texte au centre du conteneur parent */
+    left: 50%; /* Positionne la gauche du conteneur de texte au centre du conteneur parent */
+    transform: translate(-50%, -50%); /* Ajuste la position du texte au centre du conteneur parent */
+    text-align: center; /* Centre le texte horizontalement */
+    color: #fff; /* Couleur du texte */
+  }
+  
+  .texte-sur-image h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .texte-sur-image p {
+    font-size: 1.2em;
+  }
+
 
 body {
     font-size: 1.2em;
