@@ -88,7 +88,7 @@
                 </div>
                 <div style="margin: 100px;"></div>
                 <h3 class="title-spacer mb-5">formulaire de contact </h3>
-                <form method="post" action="donneesClients.php" id="contactForm" onsubmit="return validateForm()">
+                <form id="contactForm" onsubmit="return validateForm()">
                   <label for="nom">Nom :</label>
                   <input type="text" id="nom" name="nom" required>
           
@@ -97,12 +97,15 @@
           
                   <label for="objet">Objet :</label>
                   <input type="text" id="objet" name="objet" required>
+                  
+                  <label for="numero">telephone :</label>
+                  <input type="text" id="numero" name="numero" required>
           
                   <label for="message">Message :</label>
                   <textarea id="message" name="message" rows="4" required></textarea>
           
                   <button type="submit">Envoyer</button>
-                </form>
+              </form>
           
               <div id="errorMessage" class="error-message" style="display:none;"></div>
           
